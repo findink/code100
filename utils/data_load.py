@@ -78,10 +78,13 @@ def load_UCR(dataset):
         train_x = (train_x - mean)/std
         test_x = (test_x - mean)/std    # test data ,unkown&rare: so use train_data's mean & std
      
-    return train_x[..., np.newaxis], train_y, test_x[..., np.newaxis], test_y  # add 
+    # return train_x[..., np.newaxis], train_y, test_x[..., np.newaxis], test_y  # add ??
+    return train_x, train_y, test_x, test_y 
 
 
 x1,x2,x3,x4 = load_UCR("ECG200")
-print(x1)
 
-data_plot.plot_y(x1[3])
+
+
+data_plot.tsne_3D(x1,x2)
+# print(np.vstack((x1,x3)).shape)
