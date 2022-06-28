@@ -41,3 +41,5 @@ def tsne_3D(x,y):
     ax = fig.add_subplot(projection='3d')
     ax.scatter(X_tsne[:, 0], X_tsne[:, 1],X_tsne[:, 2], c=y)
     plt.show()
+
+    
