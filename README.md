@@ -1,4 +1,7 @@
 hello
 test
 
-> [!INFO]
+>[!NOTE]
+
+> [!NOTE]
+
